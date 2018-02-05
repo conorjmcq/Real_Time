@@ -1,7 +1,12 @@
-#include <GL/glew.h> // include GLEW and new version of GL on Windows
-#include <GLFW/glfw3.h> // GLFW helper library
-#include <stdio.h>
-
+#ifdef __APPLE__
+#	include <GL/glew.h>
+#	include <GLFW/glfw3.h> // GLFW helper library
+#	include <stdio.h>
+#else
+#	include "Internal_Dependencies\glew\glew.h"
+#	include "Internal_Dependencies\freeglut\freeglut.h"
+#	include <iostream>
+#endif
 const char* vertex_shader =
 "#version 400\n"
 "in vec3 vp;"
