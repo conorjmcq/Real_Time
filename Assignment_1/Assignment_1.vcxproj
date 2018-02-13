@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\glm\glm\glm.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8E107E70-53FA-4203-93E2-B2E6355FCFC4}</ProjectGuid>
@@ -89,11 +92,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\assimp\include;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glew;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glfw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glfw;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glew;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glfw3.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\assimp\lib;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glm;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glfw;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glew;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glfw3.lib;glew32.lib;winmm.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -103,12 +107,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\freeglut\include;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glfw\include;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glew\include;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>U:\Real-Time\Assignment_1\Assignment_1\Internal_Dependencies\freeglut;U:\Real-Time\Assignment_1\Assignment_1\Internal_Dependencies\glew;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\freeglut\lib;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\assimp\lib\Release;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glm\glm;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glfw\lib;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glew\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glew32.lib;glfw3.lib;assimp.lib;winmm.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -118,10 +123,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\assimp\lib;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glew;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glfw;C:\Users\euans\OneDrive\Documents\Real-Time Graphics\Assignment_1\Internal_Dependencies\glm;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;assimp.lib;glfw3.lib;glew32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
